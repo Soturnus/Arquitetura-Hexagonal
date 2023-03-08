@@ -6,11 +6,11 @@ public class Customer {
 		this.isValidCpf = false; 
 	}
 	
-	public Customer(String id, String name, Address adress, String cpf, Boolean isValidCpf) {
+	public Customer(String id, String name, Address address, String cpf, Boolean isValidCpf) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.adress = adress;
+		this.address = address;
 		this.cpf = cpf;
 		this.isValidCpf = isValidCpf;
 	}
@@ -19,7 +19,7 @@ public class Customer {
 	
 	private String name; 
 	
-	private Address adress; 
+	private Address address; 
 	
 	private String cpf;
 	
@@ -41,12 +41,12 @@ public class Customer {
 		this.name = name;
 	}
 
-	public Address getAdress() {
-		return adress;
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setAdress(Address adress) {
-		this.adress = adress;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	public String getCpf() {
