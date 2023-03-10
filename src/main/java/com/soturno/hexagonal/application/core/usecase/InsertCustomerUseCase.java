@@ -1,4 +1,4 @@
-package com.soturno.hexagonal.application.core.domain.usecase;
+package com.soturno.hexagonal.application.core.usecase;
 
 import com.soturno.hexagonal.application.core.domain.Customer;
 import com.soturno.hexagonal.application.ports.in.InsertCustomerInputPort;
