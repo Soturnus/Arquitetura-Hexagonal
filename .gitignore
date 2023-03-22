@@ -51,3 +51,5 @@ buildNumber.properties
 # Eclipse Core
 .project
 
+### Mongo ###
+data-mongo/

@@ -26,13 +26,13 @@ public class KafkaConsumerConfig {
 	@Bean
 	 public ConsumerFactory<String, CustomerMessage> consumerFactory() {
 	 Map<String, Object> props = new HashMap<>();
-	 props.put(BOOTSTRAP_SERVERS_CONFIG, "localhost:29092");
-	 props.put(GROUP_ID_CONFIG, "suturno");
+	 props.put(BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+	 props.put(GROUP_ID_CONFIG, "soturno");
 	 props.put(KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 	 props.put(VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
 	 props.put(AUTO_OFFSET_RESET_CONFIG, "earliest");
-	 return new DefaultKafkaConsumerFactory<>(props, new StringDeserializer(), new
-	JsonDeserializer<>(CustomerMessage.class));
+	 return new DefaultKafkaConsumerFactory<>(props, new StringDeserializer(), 
+			 new JsonDeserializer<>(CustomerMessage.class));
 	 }
 	 @Bean
 	 public ConcurrentKafkaListenerContainerFactory<String, CustomerMessage>

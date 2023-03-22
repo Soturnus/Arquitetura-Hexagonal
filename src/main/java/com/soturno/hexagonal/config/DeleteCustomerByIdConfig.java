@@ -11,7 +11,7 @@ import com.soturno.hexagonal.application.core.usecase.FindCustomerByIdUseCase;
 public class DeleteCustomerByIdConfig {
 
 	@Bean
-	public DeleteCustomerByIdUseCase findCustomerByIdUseCase(
+	public DeleteCustomerByIdUseCase deleteCustomerByIdUseCase(
 			FindCustomerByIdUseCase findCustomerByIdAUseCase,
 			DeleteCustomerByIdAdapter deleteCustomerByIdAdapter
 			) {
